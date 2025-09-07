@@ -1,5 +1,5 @@
 # LabelSkewSplitter Library
-LabelSkewSplitter is a Python library that partitions datasets by sorting samples according to their labels and dividing them into sequential segments. Each segment is saved as a client-specific subset, resulting in distinct label distributions. This method is particularly useful for simulating non-IID data conditions in **Federated Learning** and **Distributed Machine Learning** environments.
+LabelSkewSplitter is a Python library that partitions datasets by sorting samples according to their labels and dividing them into sequential segments. Each segment is saved as a client-specific subset, resulting in distinct label distributions. This method is particularly useful for simulating non independent and identically distributed data conditions in **Federated Learning** and **Distributed Machine Learning** environments.
 
 ## Installation
 
@@ -13,7 +13,7 @@ Note: This library requires `pandas` to be installed.
 
 ## Usage
 
-The labelskewsplitter library offers a straightforward function to divide a Pandas DataFrame into multiple sub-datasets according to **Label Distribution Skew**.
+The labelskewsplitter library offers a straightforward function to divide a Pandas DataFrame into multiple sub-datasets according to **Label Distribution Skew** on non-IID data.
 
 ### Example
 

@@ -13,7 +13,7 @@ Note: This library requires `pandas` to be installed.
 
 ## Usage
 
-The labelskewsplitter library offers a straightforward function to divide a Pandas DataFrame into multiple subsets according to **Label Distribution Skew**. It is especially useful for generating non-IID data scenarios in Federated Learning or for constructing client-specific datasets in distributed machine learning experiments.
+The labelskewsplitter library offers a straightforward function to divide a Pandas DataFrame into multiple sub-datasets according to **Label Distribution Skew**.
 
 ### Example
 
@@ -48,7 +48,7 @@ skewed_split(
 
 ### `skewed_split(input_csv, label_column, num_clients, name_prefix="Client")`
 
-Splits the input dataset by label skew into multiple client files. The function sorts the input DataFrame by the specified `label_column` and then divides the sorted data into `num_clients` approximately equal parts. This method ensures that each client dataset receives a portion of the data that maintains a certain level of label skew, as the data is not randomly shuffled before splitting.
+Splits the input dataset by label skew into multiple client files. The function sorts the input DataFrame by the specified `label_column` in ascending order and then divides the sorted data into `num_clients` approximately equal parts. This method ensures that each client dataset receives a portion of the data that maintains a certain level of label skew, as the data is not randomly shuffled before splitting.
 
 **Parameters:**
 

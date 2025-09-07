@@ -1,5 +1,5 @@
-# Non-IID-Data-Skew-Label-Distribution-Skew
-LabelSkewSplitter is a Python tool that partitions datasets by sorting samples according to their labels and dividing them into sequential segments. Each segment is saved as a client-specific subset, resulting in distinct label distributions. This method is particularly useful for simulating non-IID data conditions in federated learning and distributed machine learning environments.
+# LabelSkewSplitter Library
+LabelSkewSplitter is a Python library that partitions datasets by sorting samples according to their labels and dividing them into sequential segments. Each segment is saved as a client-specific subset, resulting in distinct label distributions. This method is particularly useful for simulating non-IID data conditions in **Federated Learning** and **Distributed Machine Learning** environments.
 
 ## Installation
 
@@ -13,7 +13,7 @@ Note: This library requires `pandas` to be installed.
 
 ## Usage
 
-The `labelskewsplitter` library provides a simple function to split a Pandas DataFrame into multiple parts based on label distribution skew. This is particularly useful for simulating non-IID data distributions in federated learning or creating specialized datasets for distributed machine learning experiments.
+The labelskewsplitter library offers a straightforward function to divide a Pandas DataFrame into multiple subsets according to **Label Distribution Skew**. It is especially useful for generating non-IID data scenarios in Federated Learning or for constructing client-specific datasets in distributed machine learning experiments.
 
 ### Example
 
